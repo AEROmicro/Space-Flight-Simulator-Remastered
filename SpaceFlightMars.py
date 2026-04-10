@@ -1253,6 +1253,9 @@ def main():
 
     # -- Launch code ---------------------------------------------------------
     launch_code = input("  Set your personal launch code: ").strip()
+    while not launch_code:
+        print("  [!] Launch code cannot be empty.")
+        launch_code = input("  Set your personal launch code: ").strip()
     print()
     print("  We are go for launch in T-minus...")
     time.sleep(1)
